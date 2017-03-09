@@ -1,6 +1,6 @@
 #!/bin/bash
-INCLUDEPATH = -I/usr/local/include/ -I/usr/include -I/opt/OpenBLAS/include
-LIBRARYPATH = -L/usr/local/lib -L/opt/OpenBLAS/lib
+INCLUDEPATH = -I/usr/local/include/ -I/usr/include -I/usr/include/openblas
+LIBRARYPATH = -L/usr/local/lib -L/usr/lib/openblas
 LIBRARY = -lpthread -lopenblas -lm -lgflags -fopenmp 
 CPP_tag = -std=gnu++11 -fopenmp
 

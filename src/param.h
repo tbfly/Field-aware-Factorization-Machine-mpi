@@ -30,7 +30,8 @@ namespace dml{
 class Param{
     public:
         Param(int &argc, char *argv[]) : argc(argc), argv(argv){
-            ::google::ParseCommandLineFlags(&argc, &argv, true);
+            //::google::ParseCommandLineFlags(&argc, &argv, true);
+            ::gflags::ParseCommandLineFlags(&argc, &argv, true);
             Init();
         }
         ~Param(){}
